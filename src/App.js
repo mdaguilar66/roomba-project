@@ -12,14 +12,10 @@ class App extends Component {
                 width: 5,
                 length: 5
             },
-            dirt: [{
+            dirt: {
                 x: '',
                 y: ''
             },
-            {
-                x2: '',
-                y2: ''
-            }],
             roomba: {
                 x: 0,
                 y: 0
