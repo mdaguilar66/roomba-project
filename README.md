@@ -34,10 +34,10 @@ the necessary events and executes the code. It brings all the components togethe
 tiles into rows and then those rows into the array of tiles.
 - **Tile** - I set the state of an individula tile which states it has roombam, dirt,
 and id (x,y) properties. When a roomba lands on a tile, 3 actions happen:
-      1. Check if roomba is on tile
-      2. New id is set
-      3. Check is tile is dirty
-To check each of these, javascript objects must be converted to JSON strings
+      1. Check if roomba is on tile,
+      2. New id is set,
+      3. Check is tile is dirty.
+ To check each of these, javascript objects must be converted to JSON strings
 so that they are comparable.
 - **User inputs** - I created a form where user can enter location of dirt patch and
 starting point of roomba. I used a single onChange handler to handle both of
