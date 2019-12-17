@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RoombaInputs from '../src/components/RoombaInputs';
+import UserInputs from '../src/components/UserInputs';
 import CompassAndGridWrapper from '../src/components/CompassAndGridWrapper';
 
 class App extends Component {
@@ -138,7 +138,7 @@ class App extends Component {
                         south={this.south}
                         west={this.west}
                     /> :
-                    <RoombaInputs
+                    <UserInputs
                         onChange={this.handleChange}
                         onSubmit={this.handleSubmit}
                         grid={this.state.grid}

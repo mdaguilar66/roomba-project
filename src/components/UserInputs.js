@@ -8,7 +8,7 @@ const RoombaInputs = (props) => {
             <div className="alignPageContent">
                 <div className="inline">
                     <div className='howToPlay'>
-                        <h5>Choose your dirt location and roomba start point. Navigate the roomba to the dirt patch.</h5>
+                        <h5>Choose your dirt location and roomba start point and hit play!</h5>
                     </div>
                 </div>
                 <div className="inline">

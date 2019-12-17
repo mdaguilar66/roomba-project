@@ -30,6 +30,7 @@ input {
 
 #root {
   border: 2px solid black;
+  box-shadow: 7px 9px;
   padding-bottom: 60px;
   padding-top: 60px;
   margin: 60px;
