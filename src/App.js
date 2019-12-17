@@ -123,7 +123,7 @@ class App extends Component {
 
 // when submit button is clicked render the grid and compass buttons
 // include CompassAndGridWrapper
-// include RoombaInputs
+// include UserInputs
     render() {
         return (
             <div>

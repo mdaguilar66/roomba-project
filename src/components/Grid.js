@@ -14,8 +14,8 @@ class Grid extends Component {
     render() {
         let count = Math.floor((Math.random() * 100000) + 1);
         const grid = this.props.state.grid;
-        const width = grid.width;
-        const length = grid.length;
+        const width = 5;
+        const length = 5;
         const arrayOfTiles = [];
 
         for (let i = length - 1; i >= 0; i--) {
