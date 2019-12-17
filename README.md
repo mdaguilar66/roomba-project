@@ -28,26 +28,31 @@ components (which I considered this project to have). In order to use React, I
 needed to have Node JS installed on my computer.
 
 ## I broke the project down into separate components:
-- App - When the user interacts with an app events are fired. The app handles
-the necessary events and executes the code.
-- Grid - Build the 5x5 grid. I did this by creating an array of tile and pushing
+- **App** - When the user interacts with an app events are fired. The app handles
+the necessary events and executes the code. It brings all the components together.
+- **Grid** - Build the 5x5 grid. I did this by creating an array of tile and pushing
 tiles into rows and then those rows into the array of tiles.
-- Tile - I set the state of an individula tile which states it has roombam, dirt,
+- **Tile** - I set the state of an individula tile which states it has roombam, dirt,
 and id (x,y) properties. When a roomba lands on a tile, 3 actions happen:
-1. Check if roomba is on tile
-2. New id is set
-3. Check is tile is dirty
+      1. Check if roomba is on tile
+      2. New id is set
+      3. Check is tile is dirty
 To check each of these, javascript objects must be converted to JSON strings
 so that they are comparable.
-- User inputs - I created a form where user can enter location of dirt patch and
+- **User inputs** - I created a form where user can enter location of dirt patch and
 starting point of roomba. I used a single onChange handler to handle both of
 these inputs. These inputs are then passed to a handleChange funtion in app.js.
-- Compass - I created the 'North', 'East', 'South', 'West' buttons for the user
+- **Compass** - I created the 'North', 'East', 'South', 'West' buttons for the user
 to move the roomba around the grid.
-- Compass and grid wrapper -
+- **Compass and grid wrapper** - I built this so that I could access the grid
+and compass together and render them on app.js.
 
-## Index.js
+## Index.js:
+App.js is then rendered in index.js which is the routes file that gets executed by the browser.
 
-
-
+## If I had more time I would:
+- Allow user to enter more dirt patches
+- Print the location of the dirt patch picked up
+- Print final hoover position
+- Print number of dirt patched left
 
